@@ -1,0 +1,33 @@
+<div class="center top-logo">
+	<%= image_tag("logo.png", :alt => "One Fourteen Bailey Logo") %>
+</div>
+<div class="navbar">
+  	<div class="navbar-inner pull-center">
+  		<div class="container">
+	      	<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+	        	<span class="icon-bar"></span>
+	        	<span class="icon-bar"></span>
+	        	<span class="icon-bar"></span>
+	      	</a>
+		    <div class="nav-collapse collapse pull-center">
+			    <ul class="nav">
+			      <li class="<%= 'active' if current_page?(root_path) %>">
+			      	<%= link_to "Our Work", root_path %>
+			      </li>
+			      <li class="<%= 'active' if current_page?(services_path) %>">
+			      	<%= link_to "Services We Offer", services_path %>
+			      </li>
+			      <li class="<%= 'active' if current_page?(different_path) %>">
+			      	<%= link_to "How We Are Different", different_path %>
+			      </li>
+			      <li class="<%= 'active' if current_page?(about_path) %>">
+			      	<%= link_to "Get To Know Us", about_path %>
+			      </li>
+			      <li class="<%= 'active' if current_page?(contact_path) %>">
+			      	<%= link_to "Contact Us", contact_path %>
+			      </li>
+			    </ul>
+			</div>
+		</div>
+  	</div>
+</div>

@@ -1,0 +1,58 @@
+$navbarLinkColorActive: #848383;
+
+$navbarLinkColorHover: #848383;
+
+$navbarLinkColor: #cccccc;
+
+$navbarText: #cccccc;
+
+$sansFontFamily: 'Arial';
+
+$navbarBackground: #ffffff;
+
+$navbarBackgroundHighlight: #ffffff;
+
+@import "bootstrap";
+@import "bootstrap-responsive";
+
+.center{
+	text-align:center;
+}
+
+.navbar-inner{
+	border: 0px;
+}
+.pull-center {
+    text-align: center;
+}
+.pull-center > .nav {
+    float:none;
+    display:inline-block;
+    *display: inline; *zoom: 1;
+    height: 32px;
+}
+
+.navbar .nav > li{
+	margin-right: 60px;
+}
+
+.footer{
+	margin-top: 45px;
+	padding-top: 5px;
+	border-top: 1px solid #eaeaea;
+	color: #999;
+}
+
+.footer-right{
+	margin-right: 15px;
+	float:right;
+}
+
+.footer-left{
+	margin-left: 15px;
+	float:left;
+}
+
+.top-logo{
+	margin-top:10px;
+}
