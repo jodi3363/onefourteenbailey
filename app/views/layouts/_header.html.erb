@@ -11,10 +11,10 @@
 	      	</a>
 		    <div class="nav-collapse collapse pull-center">
 			    <ul class="nav">
-			      <li class="<%= 'active' if current_page?(root_path) %>">
+			      <li class="<%= 'active' if current_page?(root_path) %>" id="work">
 			      	<%= link_to "Our Work", root_path %>
 			      </li>
-			      <li class="<%= 'active' if current_page?(services_path) %>">
+			      <li class="<%= 'active' if current_page?(services_path) %>" id="services">
 			      	<%= link_to "Services We Offer", services_path %>
 			      </li>
 			      <li class="<%= 'active' if current_page?(different_path) %>">
@@ -31,3 +31,5 @@
 		</div>
   	</div>
 </div>
+<script>
+</script>
