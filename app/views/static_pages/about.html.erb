@@ -1,3 +1,26 @@
-<%= image_tag("about_jodi.png", :alt => "Jodi Dias", :class => "img-circle") %>
-<%= image_tag("about_delana.png", :alt => "Delana Joldersma", :class => "img-circle") %>
-<%= image_tag("about_judy.png", :alt => "Judy Dias", :class => "img-circle") %>
+<div class="image_center about_center">
+	<div>
+		<%= image_tag("about_jodi.png", :alt => "Jodi Dias", :class => "img-circle", :id => "jodi_image_left") %>
+		<div id="jodi_copy_right">
+			<p id="jodi_text_width">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis ipsum enim. Sed porta euismod sapien sit amet gravida. Donec congue nulla non risus pulvinar non imperdiet risus tincidunt.</p>
+		</div>
+	</div>
+	<br>
+
+	<div>
+		<div id="delana_text_width">
+			<p id="delana_copy_left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis ipsum enim. Sed porta euismod sapien sit amet gravida. Donec congue nulla non risus pulvinar non imperdiet risus tincidunt.</p>
+		</div>
+		
+		<%= image_tag("about_delana.png", :alt => "Delana Joldersma", :class => "img-circle", :id => "delana_image_right") %>
+	</div>
+	<br>
+
+	<div>
+		<%= image_tag("about_judy.png", :alt => "Judy Dias", :class => "img-circle", :id => "judy_image_left") %>
+
+		<div id="judy_text_width">
+			<p id="judy_copy_right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis ipsum enim. Sed porta euismod sapien sit amet gravida. Donec congue nulla non risus pulvinar non imperdiet risus tincidunt.</p>
+		</div>
+	</div>
+</div>

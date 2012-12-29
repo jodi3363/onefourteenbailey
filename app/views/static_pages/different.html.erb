@@ -1,9 +1,9 @@
 <div class="image_center content_center">
-	<div class="content_left center">
+	<div class="center" id="differences_left">
 		<%= image_tag("how-we-are-different_1.png", :alt => "One Fourteen Bailey Services") %>
 	</div>
 
-	<div class="content_right center">
+	<div class="center" id="differences_right">
 		
 		<h4 class="gray_text left text_width image_center">A new approach to designing the perfect space</h4>
 		<br>
@@ -17,6 +17,6 @@
 			Interior design doesn’t need to be expensive, and with our <strong>affordable design plan</strong> you have complete control over your money and how your budget is spent.
 		</p>
 		<br>
-		<button class="image_center btn btn-primary custom" type="button">SCHEDULE A FREE DESIGN CONSULTATION TODAY</button>		
+		<%= link_to "SCHEDULE A FREE DESIGN CONSULTATION TODAY", contact_path, :class => "image_center btn btn-primary custom" %>
 	</div>
 </div>
