@@ -1,26 +1,27 @@
 <%= form_for @message, :url => contact_path do |form| %>
-  <fieldset class="fields">
-    <div class="field">
-      <%= form.label :name %>
-      <%= form.text_field :name %>
-    </div>
+  <div id="contact_left_margin">
+     <fieldset id="contact_width">
+        <legend class="lightgray_text">Say hi.</legend>
+        <p class="help-block gray_text" id="contact_form_text">We would love to work with you. To schedule a free design consultation, simply contact us by filling in the form below, or calling <strong>413-358-5566.</strong>
+        </p>
+        <br>
+        <%= form.text_field :name, :class => "span3", :required => true, :placeholder => "Name"  %>
+        <br>
+        <%= form.text_field :email, :class => "span3", :required => true, :placeholder => "Email"  %>
+        <br>
+        <%= form.telephone_field :phone, :class => "span3", :required => true, :placeholder => "Phone"  %>
+        <br>
+        <%= form.text_area :body, :class => "span3", :rows => 5, :required => true, :placeholder => "Tell us a little bit about your project..."  %>
+        <br>
+        <label class="checkbox gray_text" id="checkbox_font">
+          <%= form.check_box :updates %> Yes, I would like to receive One Fourteen Bailey email updates
+        </label><br> 
     
-    <div class="field">
-      <%= form.label :email %>
-      <%= form.text_field :email %>
-    </div>
-    <div class="field">
-      <%= form.label :subject %>
-      <%= form.text_field :subject %>
-    </div>
+    </fieldset>
     
-    <div class="field">
-      <%= form.label :body %>
-      <%= form.text_area :body %>
-    </div>
-  </fieldset>
-  
-  <fieldset class="actions">
-    <%= form.submit "Send" %>
-  </fieldset>
+    <fieldset class="actions">
+      <%= form.submit "Submit", :class=> "btn" %>
+    </fieldset>
+  </div>  
 <% end %>
+
