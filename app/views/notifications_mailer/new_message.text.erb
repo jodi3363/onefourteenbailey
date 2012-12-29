@@ -6,4 +6,4 @@ Phone: <%= @message.phone %>
 
 Body: <%= @message.body %>
 
-Receive Updates?: <%= @message.updates %>
+Receive Updates?: <% if @message.updates == true %>Yes<% else %>No<% end %>
